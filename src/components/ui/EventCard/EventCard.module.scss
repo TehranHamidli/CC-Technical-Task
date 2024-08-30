@@ -1,0 +1,83 @@
+.heartIconContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.heartIcon {
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  background-color: var(--dark-gray);
+  border-radius: 50%;
+  padding: 6px;
+
+  width: 90%;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.liked {
+  background-color: var(--dark-red);
+}
+
+.cardContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+}
+
+.eventImage {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+.eventTitle {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.eventDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.dateContainer,
+.checkContainer,
+.ticketContainer {
+  display: flex;
+  align-items: center;
+  margin: 0.2rem 0;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    width: 265px;
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform: none;
+    }
+  }
+
+  .heartIconContainer {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+  }
+}

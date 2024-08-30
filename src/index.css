@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.container{
+  background-color: var(--primary-white);
+
+}
+.swiper-slide {
+  flex-shrink: 2;
+}
+
+.swiper-wrapper {
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .swiper-wrapper {
+    padding: 2rem 0;
+  }
+}

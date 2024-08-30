@@ -1,0 +1,194 @@
+.introContainer {
+  background-image: url("../../assets/images/intro.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+
+  .introContent {
+    padding-top: 16rem;
+    padding-left: 4rem;
+    p {
+      margin-bottom: 10px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+    button {
+      margin-top: 40px;
+
+      &:hover {
+        background-color: var(--dark-red);
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.categoryList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.popularTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.5rem;
+
+  p:last-child {
+    cursor: pointer;
+  }
+}
+.popularEventsLists {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.popularDestinationsList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 2rem;
+
+  p {
+    padding: 0 4.5rem;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 70%;
+    }
+  }
+}
+
+.joinContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  background-color: var(--light-pink);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 6rem;
+
+  img {
+    width: 200px;
+  }
+  .joinText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  button {
+    margin-top: 20px;
+    &:hover {
+      background-color: var(--dark-red);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .introContainer {
+    .introContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 1rem;
+      padding-top: 7rem;
+      text-align: center;
+    }
+  }
+
+  .categoryList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .popularEventsLists {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popularTitle {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0;
+  }
+
+  .popularDestinationsList {
+    text-align: center;
+
+    .popular {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
+
+      p {
+        width: 100%;
+        padding: 0 0;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    div {
+      flex-wrap: wrap;
+
+      img {
+        width: 30%;
+      }
+    }
+  }
+
+  .joinContainer {
+    flex-wrap: wrap;
+    width: 90%;
+    background-color: var(--light-pink);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+    button {
+      width: 100%;
+    }
+    .joinText {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .joinImage {
+      margin-top: 2rem;
+    }
+  }
+}
