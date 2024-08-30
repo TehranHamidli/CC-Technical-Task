@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./LangSwitcher.module.scss";
+import styles from "./Langswitcher.module.scss";
 import arrowBottom from "../../../assets/images/arrow-bottom.svg";
 import { useTranslation } from "react-i18next";
 import Text from "../Text/Text";
