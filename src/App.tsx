@@ -10,6 +10,9 @@ function App() {
       <AppRoutes />
       <AppRoutes />
       <AppRoutes />
+      <AppRoutes />
+      <AppRoutes />
+      <AppRoutes />
     </>
   );
 }
